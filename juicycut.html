@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Juicy Cut</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <style>
+        @layer utilities {
+            .content-auto {
+                content-visibility: auto;
+            }
+        }
+
+        
+
+        @font-face {
+            font-family: Samim;
+            src: url(assets/fonts/Samim.woff);
+        }
+
+        @font-face {
+            font-family: Samim;
+            font-weight: bold;
+            src: url(assets/fonts/Samim-Bold.woff);
+        }
+        body {
+            overflow-x: hidden;
+            background-color: #1a1c24;
+            font-family: Samim;
+        }
+        .swiper-container {
+            width: 100%;
+            height: fit-content;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .swiper-container:before,
+        .swiper-container:after {
+            content: "";
+            position: absolute;
+            top: 0;
+            height: 100%;
+            width: 50%;
+            z-index: 1;
+        }
+
+        .swiper-container:before {
+            left: 0;
+            background: linear-gradient(to right, #1a1c24, rgba(0, 0, 0, 0));
+        }
+
+        .swiper-container:after {
+            right: 0;
+            background: linear-gradient(to left, #1a1c24, rgba(0, 0, 0, 0));
+        }
+        
+        .swiper-wrapper {
+            z-index: 2;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <nav class="h-20 border-b border-1 border-[#44475A] flex justify-end items-center mx-3">
+        <h1 class="text-4xl font-bold text-[#44475A]">Game-Up22</h1>
+    </nav>
+    <div class="mx-5 px-5 mt-3 flex lg:gap-5" style="height: 600px;">
+        <div class="w-0 lg:w-1/3 border-1 flex flex-col gap-10 items-center invisible lg:visible">
+            <img src="assets/images/juicycut.webp" alt="" class="w-80 h-80 rounded">
+            <a  href="https://game-up22.com"><button class="bg-[#F1FA8C] rounded px-32 py-2 font-bold"  type="button">شروع بازی</button></a>
+            <div class="flex flex-col gap-3">
+                <div class="flex gap-48">
+                <span class="text-white">پلتفرم</span>
+                <span class="text-white">بازی تحت وب</span>
+            </div>
+            <hr>
+            <div class="flex justify-between">
+                <span class="text-white">ژانر</span>
+                <span class="text-white">آنلاین، استراتژیک</span>
+            </div>
+            <hr>
+            <div class="flex justify-between">
+                <span class="text-white">تولید کننده</span>
+                <span class="text-white">Travian Games GmbH</span>
+            </div>
+            <hr>
+            <div class="flex justify-between">
+                <span class="text-white">ناشر</span>
+                <span class="text-white">سورنا گیمز</span>
+            </div>
+            <hr>
+            <div class="flex justify-between">
+                <span class="text-white">رده بندی سنی</span>
+                <span class="text-white">7 سال به بالا</span>
+            </div>
+            <hr>
+            </div>
+            
+        </div>
+        <div class="w-full lg:w-2/3 border-1 flex flex-col gap-5">
+            <div class="flex justify-start  text-4xl text-[#9ca0af]">Juicy Cut</div>
+            <div class="text-[#9ca0af] text-justify">بازی Juicy Cut یک عنوان تحت وب بوده که برای تجربه آن به سیستمی با مشخصات بالا یا مخصوصی نیاز ندارید و هر شخصی با هر رده سنی می‌تواند آن را تجربه کرده و حین تجربه آن بسیار لذت ببرد. در این بازی جذاب شما باید میوه‌هایی که روی تصویر به نمایش در میآید را تکه کرده و مراقب باشید که باعث انفجار بمب‌هایی که در بین میوه ها پنهان شده‌‌اند نشوید.</div>
+            <div class="swiper-container rounded-xl ">
+                <div class="swiper-wrapper ">
+                    <div
+                        class="swiper-slide text-center text-2xl flex flex-col lg:flex-row items-center justify-center flex rounded gap-10">
+                        <div class="swiper-big-image w-full lg:w-2/3  rounded" style="background-size: clip;">
+                            <img src="assets/images/juicycut1.webp" alt="" class="rounded" />
+                        </div>
+                    </div>
+                    <div
+                        class="swiper-slide text-center text-2xl flex flex-col lg:flex-row items-center justify-center flex rounded gap-10">
+                        <div class="swiper-big-image w-full lg:w-2/3  rounded" style="background-size: clip;">
+                            <img src="assets/images/juicycut2.webp" alt="" class="rounded" />
+                        </div>
+                    </div>
+                    <div
+                        class="swiper-slide text-center text-2xl flex flex-col lg:flex-row items-center justify-center flex rounded gap-10">
+                        <div class="swiper-big-image w-full lg:w-2/3  rounded" style="background-size: clip;">
+                            <img src="assets/images/juicycut3.webp" alt="" class="rounded" />
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+            <div class="flex justify-center"><a  href="http://game-up22.com"><button class="bg-[#F1FA8C] rounded px-32 py-2 font-bold  visible lg:invisible whitespace-nowrap"  type="button">شروع بازی</button></a></div>
+        </div>
+    </div>
+    <div class="flex flex-col gap-10 px-3 mx-3 lg:px-10 lg:mx-10 lg:mt-10">
+        <div class="text-white font-bold text-3xl">بازی های مشابه</div> 
+    <div class="swiper-container  second-swiper-grid   bg-[#44475A]">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="box-slider">
+                    <a href="https://game-up22.com">                    
+                        <div class="favorite-games box flex flex-col  gap-2 transition ease-in-out delay-100  hover:-translate-y-1 hover:scale-110 duration-300  rounded">    
+                            <img src="assets/images/crash.webp" alt="" class="h-64 rounded">
+                            <div class="rate-div text-white">
+                                <div class="rating" id="rating">
+                                    
+                                </div>
+                            </div>
+                            <b class="text-white">Crash Bandicoot 4</b>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="box-slider">
+                    <a href="https://game-up22.com">                    
+                        <div class="favorite-games box flex flex-col  gap-2 transition ease-in-out delay-100  hover:-translate-y-1 hover:scale-110 duration-300  rounded"> 
+                            <img src="assets/images/hoomiz.webp" alt="" class="h-64 rounded">
+                            <div class="rate-div text-white">
+                                <div class="rating" id="rating">
+                                    
+                                </div>
+                            </div>
+                            <b class="text-white">hoomeez</b>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="box-slider">
+                    <a href="https://game-up22.com">                    
+                        <div class="favorite-games box flex flex-col  gap-2 transition ease-in-out delay-100  hover:-translate-y-1 hover:scale-110 duration-300  rounded">
+                        
+                            <img src="assets/images/zoola.webp" alt="" class="h-64 rounded">
+                            <div class="rate-div text-white">
+                                <div class="rating" id="rating">
+                                    
+                                </div>
+                            </div>
+                            <b class="text-white">Zula</b>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="box-slider">
+                    <a href="https://game-up22.com">                    
+                        <div class="favorite-games box flex flex-col  gap-2 transition ease-in-out delay-100  hover:-translate-y-1 hover:scale-110 duration-300  rounded">
+                        
+                            <img src="assets/images/teeworld.webp" alt="" class="h-64 rounded">
+                            <div class="rate-div text-white">
+                                <div class="rating" id="rating">
+                                    
+                                </div>
+                            </div>
+                            <b class="text-white">TeeWorlds (DDNet)</b>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="box-slider">
+                    <a href="https://game-up22.com">                    
+                        <div class="favorite-games box flex flex-col  gap-2 transition ease-in-out delay-100  hover:-translate-y-1 hover:scale-110 duration-300  rounded">
+                            <img src="assets/images/call-duty.webp" alt="" class="h-64 rounded">
+                            <div class="rate-div text-white">
+                                <div class="rating" id="rating">
+                                    
+                                </div>
+                            </div>
+                            <b class="text-white">Call Of Duty Modern<br> Warfare2- Online</b>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="box-slider">
+                    <a href="https://game-up22.com">                    
+                        <div class="favorite-games box flex flex-col  gap-2 transition ease-in-out delay-100  hover:-translate-y-1 hover:scale-110 duration-300  rounded">
+                            <img src="assets/images/minecrafts.webp" alt="" class="h-64 rounded">
+                            <div class="rate-div text-white">
+                                <div class="rating" id="rating">
+                                    
+                                </div>
+                            </div>
+                            <b class="text-white">Minecraft-Online</b>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="box-slider">
+                    <a href="https://game-up22.com">                    
+                        <div class="favorite-games box flex flex-col  gap-2 transition ease-in-out delay-100  hover:-translate-y-1 hover:scale-110 duration-300  rounded">
+                            <img src="assets/images/counter.webp" alt="" class="h-64 rounded">
+                            <div class="rate-div text-white">
+                                <div class="rating" id="rating">
+                                    
+                                </div>
+                            </div>
+                            <b class="text-white">Counter-Strike 1.6 <br>online</b>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="box-slider">
+                    <a href="https://game-up22.com">                    
+                        <div class="favorite-games box flex flex-col  gap-2 transition ease-in-out delay-100  hover:-translate-y-1 hover:scale-110 duration-300  rounded">
+                            <img src="assets/images/speed.webp" alt="" class="h-64 rounded">
+                            <div class="rate-div text-white">
+                                <div class="rating" id="rating">
+                                    
+                                </div>
+                            </div>
+                            <b class="text-white">Need For Speed Rivals</b>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="box-slider">
+                    <a href="https://game-up22.com">                    
+                        <div class="favorite-games box flex flex-col  gap-2 transition ease-in-out delay-100  hover:-translate-y-1 hover:scale-110 duration-300  rounded">
+                        
+                            <img src="assets/images/far.webp" alt="" class="h-64 rounded">
+                            <div class="rate-div text-white">
+                                <div class="rating" id="rating">
+                                    
+                                </div>
+                            </div>
+                            <b class="text-white">Far Cry 3</b>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+    </div>
+    
+</body>
+<script src="assets/js/swiper-bundle.min.js"></script>
+<script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Initialize Swiper
+            var swiper = new Swiper(".swiper-container", {
+                loop: true,
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+                // autoplay: {
+                //     delay: 1000,
+                //  },
+            });
+        });
+    </script>
+    <script>
+         document.addEventListener("DOMContentLoaded", function () {
+         var thirdSwiper = new Swiper('.second-swiper-grid', {
+                slidesPerView: 20,
+                spaceBetween: 40,
+                loop: true,
+                // mousewheel: true, // Enable mouse wheel control
+                keyboard: true,   // Enable keyboard control
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+                breakpoints: {
+                    // When window width is <= 768px
+                    360: {
+                        slidesPerView: 1,
+                    },
+                    // When window width is <= 992px
+                    992: {
+                        slidesPerView: 2,
+                    },
+                    // When window width is <= 1200px
+                    1200: {
+                        slidesPerView: 3,
+                    },
+                    1500: {
+                        slidesPerView: 4,
+                    },
+                    1920: {
+                        slidesPerView: 5,
+                    },
+                    // Additional breakpoints as needed
+                },
+                
+            })
+        });
+    </script>
+</html>

@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>game-up22</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <style>
+        @layer utilities {
+            .content-auto {
+                content-visibility: auto;
+            }
+        }
+
+        
+
+        @font-face {
+            font-family: Samim;
+            src: url(assets/fonts/Samim.woff);
+        }
+
+        @font-face {
+            font-family: Samim;
+            font-weight: bold;
+            src: url(assets/fonts/Samim-Bold.woff);
+        }
+        body {
+            overflow-x: hidden;
+            background-color: #1a1c24;
+            font-family: Samim;
+        }
+
+        .swiper-container {
+            width: 100%;
+            height: fit-content;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .swiper-container:before,
+        .swiper-container:after {
+            content: "";
+            position: absolute;
+            top: 0;
+            height: 100%;
+            width: 50%;
+            z-index: 1;
+        }
+
+        .swiper-container:before {
+            left: 0;
+            background: linear-gradient(to right, #1a1c24, rgba(0, 0, 0, 0));
+        }
+
+        .swiper-container:after {
+            right: 0;
+            background: linear-gradient(to left, #1a1c24, rgba(0, 0, 0, 0));
+        }
+
+        .swiper-wrapper {
+            z-index: 2;
+        }
+
+        .rating {
+            font-size: 24px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .star {
+            color: #e20a3e;
+            /* Change this color based on your preference */
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="h-20 border-b border-1 border-[#44475A] flex justify-end items-center mx-3">
+        <h1 class="text-4xl font-bold text-[#44475A]">Game-Up22</h1>
+    </nav>
+    <div class="mx-5 px-5 mt-3 " style="height: 600px;">
+        <!-- Swiper Container -->
+        <div class="swiper-container rounded-xl pb-5">
+            <div class="swiper-wrapper ">
+                <div
+                    class="swiper-slide text-center text-2xl flex flex-col lg:flex-row items-center justify-center flex rounded lg:gap-10">
+                    <div class="swiper-big-image w-full lg:w-2/3  rounded" style="background-size: clip;">
+                        <img src="assets/images/juicycut.webp" alt="" class="rounded" />
+                    </div>
+
+                    <div class="flex flex-col gap-5 h-fit">
+                        <div class="text-white font-xl" style="color: white;">Juicy Cut</div>
+                        <div class="flex flex-col gap-10 items-center ">
+                            <div class="flex gap-10">
+                                <div
+                                    class="change-banner-image transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110  duration-300">
+                                    <img src="assets/images/juicycut1.webp" alt="" class="w-28 h-28 rounded-lg" />
+                                </div>
+                                <div
+                                    class="change-banner-image transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110  duration-300">
+                                    <img src="assets/images/juicycut2.webp" alt="" class="w-28 h-28 rounded-lg" />
+                                </div>
+                            </div>
+                            <div class="flex gap-10">
+                                <div
+                                    class="change-banner-image transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110  duration-300">
+                                    <img src="assets/images/juicycut3.webp" alt="" class="w-28 h-28 rounded-lg" />
+                                </div>
+                                <div
+                                    class="change-banner-image transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110  duration-300">
+                                    <img src="assets/images/juicycut4.webp" alt="" class="w-28 h-28 rounded-lg" />
+                                </div>
+                            </div>
+                        </div>
+                        <a href="juicycut.html"><button
+                                class="bg-[#F1FA8C]  rounded-lg w-2/3 text-base whitespace-nowrap	px-2 py-2 font-bold"
+                                type="button">دانلود و نصب</button></a>
+                    </div>
+                </div>
+                <div
+                    class="swiper-slide text-center text-2xl flex flex-col lg:flex-row items-center justify-center flex rounded gap-10">
+                    <div class="swiper-big-image w-full lg:w-2/3  rounded" style="background-size: clip;">
+                        <img src="assets/images/minecraft.webp" alt="" class="rounded" />
+                    </div>
+
+                    <div class="flex flex-col gap-5">
+                        <div class="text-white" style="color: white;">Minecraft</div>
+                        <div class="flex flex-col gap-10 items-center">
+                            <div class="flex gap-10">
+                                <div
+                                    class="change-banner-image transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110  duration-300">
+                                    <img src="assets/images/minecraft1.webp" alt="" class="w-28 h-28 rounded-lg" />
+                                </div>
+                                <div
+                                    class="change-banner-image transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110  duration-300">
+                                    <img src="assets/images/minecraft2.webp" alt="" class="w-28 h-28 rounded-lg" />
+                                </div>
+                            </div>
+                            <div class="flex gap-10">
+                                <div
+                                    class="change-banner-image transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110  duration-300">
+                                    <img src="assets/images/minecraft3.webp" alt="" class="w-28 h-28 rounded-lg" />
+                                </div>
+                                <div
+                                    class="change-banner-image transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110  duration-300">
+                                    <img src="assets/images/minecraft4.webp" alt="" class="w-28 h-28 rounded-lg" />
+                                </div>
+                            </div>
+                        </div>
+                        <a href="minecraft.html"><button
+                                class="bg-[#F1FA8C]  rounded-lg w-2/3 text-base whitespace-nowrap	px-2 py-2 font-bold"
+                                type="button">دانلود و نصب</button></a>
+                    </div>
+                </div>
+                <div
+                    class="swiper-slide text-center text-2xl flex flex-col lg:flex-row items-center justify-center flex rounded gap-2 lg:gap-10">
+                    <div class="swiper-big-image w-full lg:w-2/3  rounded" style="background-size: clip;">
+                        <img src="assets/images/travian.webp" alt="" class="rounded" />
+                    </div>
+
+                    <div class="flex flex-col gap-5 ">
+                        <div class="text-white" style="color: white;">Travian</div>
+                        <div class="flex flex-col gap-10 items-center">
+                            <div class="flex gap-10">
+                                <div
+                                    class="change-banner-image transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110  duration-300">
+                                    <img src="assets/images/travian1.webp" alt="" class="w-28 h-28 rounded-lg" />
+                                </div>
+                                <div
+                                    class="change-banner-image transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110  duration-300">
+                                    <img src="assets/images/travian2.webp" alt="" class="w-28 h-28 rounded-lg" />
+                                </div>
+                            </div>
+                            <div class="flex gap-10">
+                                <div
+                                    class="change-banner-image transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110  duration-300">
+                                    <img src="assets/images/travian3.webp" alt="" class="w-28 h-28 rounded-lg" />
+                                </div>
+                                <div
+                                    class="change-banner-image transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110  duration-300">
+                                    <img src="assets/images/travian4.webp" alt="" class="w-28 h-28 rounded-lg" />
+                                </div>
+                            </div>
+                        </div>
+                        <a href="travian.html"><button
+                                class="bg-[#F1FA8C]  rounded-lg w-2/3 text-base whitespace-nowrap	px-2 py-2 font-bold"
+                                type="button">دانلود و نصب</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+        <div class="flex flex-col lg:flex-row   gap-10 mt-5 mx-5 justify-center lg:gap-48">
+            <div class="slidetitle">
+                <div class="title bigtitle text-white">
+                    <h2>بر اساس پلتفرم</h2>
+                    <small>آرشیو بازی‌ها بر اساس پلتفرم محبوب شما</small>
+                </div>
+            </div>
+            <a class="flex items-center gap-5 px-10 py-2 rounded transition ease-in-out delay-10  hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300 bg-[#2e313c]"
+                href="index.html">
+                <img src="assets/images/windows-10.png" width="65" height="65">
+                <button class="text-white flex flex-col" type="button">
+                    <b>بازی‌های ویندوز</b>
+                    <strong>Windows</strong>
+                </button>
+            </a>
+            <a class="flex items-center gap-5 px-10 py-2 rounded transition ease-in-out delay-10  hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300 bg-[#2e313c]"
+                href="#android">
+                <img src="assets/images/android-os.png" width="65" height="65">
+                <button class="text-white  flex flex-col" type="button">
+                    <b>بازی‌های اندروید</b>
+                    <strong>android</strong>
+                </button>
+            </a>
+        </div>
+        <div class="lg:mt-20 lg:mx-5 lg:px-5  flex">
+            <h1 class="text-white text-xl">محصولات پرفروش </h1>
+        </div>
+        <div class="swiper-container lg:mx-5 lg:px-5 first-swiper-grid mt-5 h-96">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="box-slider">
+                        <a href="https://game-up22.com">                        
+                            <div class="box flex flex-col  gap-2 cursor-pointer transition ease-in-out delay-50  hover:-translate-y-1 hover:scale-110 duration-300">
+                                <img src="assets/images/jagged.webp" alt="" class="rounded  h-64 ">
+                                <b class="text-white">Jagged Alliance 3</b>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-slide  h-fit">
+                    <div class="box-slider">
+                        <a href="https://game-up22.com">                        
+                            <div class="box flex flex-col  gap-2 cursor-pointer transition ease-in-out delay-50  hover:-translate-y-1 hover:scale-110 duration-300">
+                                <img src="assets/images/houseFlipper.webp" alt="" class="h-64 rounded">
+                                <b class="text-white">House Flipper 2</b>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box-slider">
+                        <a href="https://game-up22.com">                        
+                            <div
+                            class="box flex flex-col  gap-2 cursor-pointer transition ease-in-out delay-50  hover:-translate-y-1 hover:scale-110 duration-300">
+                                <img src="assets/images/doom.webp" alt="" class="h-64 rounded">
+                                <b class="text-white">Doom Classic</b>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box-slider">
+                        <a href="https://game-up22.com">                        
+                            <div
+                            class="box flex flex-col  gap-2 cursor-pointer transition ease-in-out delay-50  hover:-translate-y-1 hover:scale-110 duration-300">
+                                <img src="assets/images/doom3.webp" alt="" class="h-64 rounded">
+                                <b class="text-white">Doom 3</b>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box-slider">
+                        <a href="https://game-up22.com">                        
+                            <div
+                            class="box flex flex-col  gap-2 cursor-pointer transition ease-in-out delay-50  hover:-translate-y-1 hover:scale-110 duration-300">
+                                <img src="assets/images/tetris.webp" alt="" class="h-64 rounded">
+                                <b class="text-white">Tetris Effect</b>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box-slider">
+                        <a href="https://game-up22.com">                        
+                            <div
+                            class="box flex flex-col  gap-2 cursor-pointer transition ease-in-out delay-50  hover:-translate-y-1 hover:scale-110 duration-300">
+                                <img src="assets/images/kerbal.webp" alt="" class="h-64 rounded">
+                                <b class="text-white">Kerbal Space Program</b>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box-slider">
+                        <a href="https://game-up22.com">                        
+                            <div
+                            class="box flex flex-col  gap-2 cursor-pointer transition ease-in-out delay-50  hover:-translate-y-1 hover:scale-110 duration-300">
+                                <img src="assets/images/lego.webp" alt="" class="h-64 rounded">
+                                <b class="text-white">Lego 2K Drive</b>
+                            </div>
+                        </a>    
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box-slider">
+                        <a href="https://game-up22.com">                        
+                            <div
+                            class="box flex flex-col  gap-2 cursor-pointer transition ease-in-out delay-50  hover:-translate-y-1 hover:scale-110 duration-300">
+                                <img src="assets/images/cities.webp" alt="" class="h-64 rounded">
+                                <b class="text-white">Cities Skylines ||-Ultimate Edition</b>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box-slider">
+                        <a href="https://game-up22.com">                        
+                            <div
+                            class="box flex flex-col  gap-2 cursor-pointer transition ease-in-out delay-50  hover:-translate-y-1 hover:scale-110 duration-300">
+                                <img src="assets/images/chronicles.webp" alt="" class="h-64 rounded">
+                                <b class="text-white">The Chronicles Of Riddick: Duology Repack</b>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box-slider">
+                        <a href="https://game-up22.com">                        
+                            <div
+                            class="box flex flex-col  gap-2 cursor-pointer transition ease-in-out delay-50  hover:-translate-y-1 hover:scale-110 duration-300">
+                                <img src="assets/images/brothers.webp" alt="" class="h-64 rounded">
+                                <b class="text-white">Brothers: A Tale Of Two Sons</b>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box-slider">
+                        <a href="https://game-up22.com">                        
+                            <div
+                            class="box flex flex-col  gap-2 cursor-pointer transition ease-in-out delay-50  hover:-translate-y-1 hover:scale-110 duration-300">
+                                <img src="assets/images/monster.webp" alt="" class="h-64 rounded">
+                                <b class="text-white">Monster Hunter: World</b>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box-slider">
+                        <a href="https://game-up22.com">                        
+                            <div
+                            class="box flex flex-col  gap-2 cursor-pointer transition ease-in-out delay-50  hover:-translate-y-1 hover:scale-110 duration-300">
+                                <img src="assets/images/spelunky.webp" alt="" class="h-64 rounded">
+                                <b class="text-white">Spelunky 2</b>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+        <div class=" flex lg:mx-5 lg:px-5">
+            <h1 class="text-white text-xl">محبوب ترین ها</h1>
+        </div>
+        <div class="swiper-container lg:mx-5 lg:px-5 second-swiper-grid mt-5 h-96 ">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="box-slider">
+                        <a href="https://game-up22.com">                        
+                            <div
+                            class="favorite-games box flex flex-col cursor-pointer gap-2 transition ease-in-out delay-100  hover:-translate-y-1 hover:scale-110 duration-300  rounded">
+
+                                <img src="assets/images/crash.webp" alt="" class="h-64 rounded">
+                                <div class="rate-div text-white">
+                                    <div class="rating" id="rating">
+
+                                    </div>
+                                </div>
+                                <b class="text-white">Crash Bandicoot 4</b>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box-slider">
+                        <a href="https://game-up22.com">                        
+                            <div
+                            class="favorite-games box flex flex-col cursor-pointer gap-2 transition ease-in-out delay-100  hover:-translate-y-1 hover:scale-110 duration-300  rounded">
+                                <img src="assets/images/hoomiz.webp" alt="" class="h-64 rounded">
+                                <div class="rate-div text-white">
+                                    <div class="rating" id="rating">
+
+                                    </div>
+                                </div>
+                                <b class="text-white">hoomeez</b>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box-slider">
+                        <a href="https://game-up22.com">                        
+                            <div
+                            class="favorite-games box flex flex-col cursor-pointer gap-2 transition ease-in-out delay-100  hover:-translate-y-1 hover:scale-110 duration-300  rounded">
+                                <img src="assets/images/zoola.webp" alt="" class="h-64 rounded">
+                                <div class="rate-div text-white">
+                                    <div class="rating" id="rating">
+
+                                    </div>
+                                </div>
+                                <b class="text-white">Zula</b>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box-slider">
+                        <a href="https://game-up22.com">                        
+                            <div
+                            class="favorite-games box flex flex-col cursor-pointer gap-2 transition ease-in-out delay-100  hover:-translate-y-1 hover:scale-110 duration-300  rounded">
+                                <img src="assets/images/teeworld.webp" alt="" class="h-64 rounded">
+                                <div class="rate-div text-white">
+                                    <div class="rating" id="rating">
+
+                                    </div>
+                                </div>
+                                <b class="text-white">TeeWorlds (DDNet)</b>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box-slider">
+                        <a href="https://game-up22.com">                        
+                            <div
+                            class="favorite-games box flex flex-col cursor-pointer gap-2 transition ease-in-out delay-100  hover:-translate-y-1 hover:scale-110 duration-300  rounded">
+                                <img src="assets/images/call-duty.webp" alt="" class="h-64 rounded">
+                                <div class="rate-div text-white">
+                                    <div class="rating" id="rating">
+
+                                    </div>
+                                </div>
+                                <b class="text-white">Call Of Duty Modern<br> Warfare2- Online</b>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box-slider">
+                        <a href="https://game-up22.com">                        
+                            <div
+                            class="favorite-games box flex flex-col cursor-pointer gap-2 transition ease-in-out delay-100  hover:-translate-y-1 hover:scale-110 duration-300  rounded">
+
+                                <img src="assets/images/minecrafts.webp" alt="" class="h-64 rounded">
+                                <div class="rate-div text-white">
+                                    <div class="rating" id="rating">
+
+                                    </div>
+                                </div>
+                                <b class="text-white">Minecraft-Online</b>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box-slider">
+                        <a href="https://game-up22.com">                        
+                            <div
+                            class="favorite-games box flex flex-col cursor-pointer gap-2 transition ease-in-out delay-100  hover:-translate-y-1 hover:scale-110 duration-300  rounded">
+                                <img src="assets/images/counter.webp" alt="" class="h-64 rounded">
+                                <div class="rate-div text-white">
+                                    <div class="rating" id="rating">
+
+                                    </div>
+                                </div>
+                                <b class="text-white">Counter-Strike 1.6 <br>online</b>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box-slider">
+                        <a href="https://game-up22.com">                        
+                            <div
+                            class="favorite-games box flex flex-col cursor-pointer gap-2 transition ease-in-out delay-100  hover:-translate-y-1 hover:scale-110 duration-300  rounded">
+
+                                <img src="assets/images/speed.webp" alt="" class="h-64 rounded">
+                                <div class="rate-div text-white">
+                                    <div class="rating" id="rating">
+
+                                    </div>
+                                </div>
+                                <b class="text-white">Need For Speed Rivals</b>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box-slider">
+                        <a href="https://game-up22.com">                        
+                            <div
+                            class="favorite-games box flex flex-col cursor-pointer gap-2 transition ease-in-out delay-100  hover:-translate-y-1 hover:scale-110 duration-300  rounded">
+                                <img src="assets/images/far.webp" alt="" class="h-64 rounded">
+                                <div class="rate-div text-white">
+                                    <div class="rating" id="rating">
+
+                                    </div>
+                                </div>
+                                <b class="text-white">Far Cry 3</b>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+        <div class="lg:mx-5 lg:px-5 flex">
+            <h1 class="text-white text-xl" id="android">آخرین بازی های اندروید</h1>
+        </div>
+        <div class="swiper-container  second-swiper-grid lg:mt-5 h-96 lg:mx-5 lg:px-5 bg-[#44475A]">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="box-slider">
+                        <a href="https://game-up22.com">                        
+                            <div
+                            class="favorite-games box flex flex-col cursor-pointer gap-2 transition ease-in-out delay-100  hover:-translate-y-1 hover:scale-110 duration-300  rounded">
+
+                                <img src="assets/images/saga.jpg" alt="" class="h-56 rounded">
+
+                                <b class="text-white">The Banner Saga</b>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box-slider">
+                        <a href="https://game-up22.com">                        
+                            <div
+                            class="favorite-games box flex flex-col cursor-pointer gap-2 transition ease-in-out delay-100  hover:-translate-y-1 hover:scale-110 duration-300  rounded">
+                                <img src="assets/images/samurai.jpg" alt="" class="h-56 rounded">
+
+                                <b class="text-white">Samurai Kazuya Idle Tap RPG</b>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box-slider">
+                        <a href="https://game-up22.com">                        
+                            <div
+                            class="favorite-games box flex flex-col cursor-pointer gap-2 transition ease-in-out delay-100  hover:-translate-y-1 hover:scale-110 duration-300  rounded">
+                                <img src="assets/images/subway.jpg" alt="" class="h-56 rounded">
+                                <b class="text-white">Subway Surfers</b>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box-slider">
+                        <a href="https://game-up22.com">                        
+                            <div
+                            class="favorite-games box flex flex-col cursor-pointer gap-2 transition ease-in-out delay-100  hover:-translate-y-1 hover:scale-110 duration-300  rounded">
+                                <img src="assets/images/devil.webp" alt="" class="h-56 rounded">
+                                <b class="text-white">Devil May Cry:<br>Peak Of Combat</b>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box-slider">
+                        <a href="https://game-up22.com">                        
+                            <div
+                            class="favorite-games box flex flex-col cursor-pointer gap-2 transition ease-in-out delay-100  hover:-translate-y-1 hover:scale-110 duration-300  rounded">
+
+                                <img src="assets/images/harry.jpg" alt="" class="h-56 rounded">
+
+                                <b class="text-white">Harry Potter:<br>Hogwarts Mystery</b>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box-slider">
+                        <a href="https://game-up22.com">                        
+                            <div
+                            class="favorite-games box flex flex-col cursor-pointer gap-2 transition ease-in-out delay-100  hover:-translate-y-1 hover:scale-110 duration-300  rounded">
+                                <img src="assets/images/Temple.webp" alt="" class="h-56 rounded">
+                                <b class="text-white">Temple Run</b>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box-slider">
+                        <a href="https://game-up22.com">                        
+                            <div
+                            class="favorite-games box flex flex-col cursor-pointer gap-2 transition ease-in-out delay-100  hover:-translate-y-1 hover:scale-110 duration-300  rounded">
+                                <img src="assets/images/rome.jpg" alt="" class="h-56 rounded">
+                                <b class="text-white">ROME: Total War</b>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box-slider">
+                        <a href="https://game-up22.com">                        
+                            <div
+                            class="favorite-games box flex flex-col cursor-pointer gap-2 transition ease-in-out delay-100  hover:-translate-y-1 hover:scale-110 duration-300  rounded">
+                                <img src="assets/images/company.webp" alt="" class="h-56 rounded">
+                                <b class="text-white">Company Of Heros</b>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box-slider">
+                        <a href="https://game-up22.com">                        
+                            <div
+                            class="favorite-games box flex flex-col cursor-pointer gap-2 transition ease-in-out delay-100  hover:-translate-y-1 hover:scale-110 duration-300  rounded">
+
+                                <img src="assets/images/combat.jpg" alt="" class="h-56 rounded">
+
+                                <b class="text-white">Combat Master Mobile FPS</b>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            $('.rate-div').hide()
+            $('.favorite-games').hover(function () {
+                console.log('yes')
+                $(this).find('.rate-div').fadeIn();
+            });
+            $('.favorite-games').mouseout(function () {
+                console.log('yes')
+                $(this).find('.rate-div').fadeOut();
+            });
+        })
+    </script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Initialize Swiper
+            var swiper = new Swiper(".swiper-container", {
+                loop: true,
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+
+            });
+
+
+            var changeBannerImages = document.querySelectorAll('.change-banner-image');
+
+            changeBannerImages.forEach(function (changeBannerImage, index) {
+                changeBannerImage.addEventListener('mouseover', function () {
+                    var newImageSrc = changeBannerImage.querySelector('img').getAttribute('src');
+
+                    var swiperBigImage = document.querySelector('.swiper-slide-active .swiper-big-image img');
+                    swiperBigImage.src = newImageSrc;
+
+                    swiper.slideTo(index, 0, false);
+                });
+            });
+        });
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var mySwiper = new Swiper('.first-swiper-grid', {
+                slidesPerView: 20,
+                spaceBetween: 40,
+                loop: true,
+                keyboard: true,
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+                breakpoints: {
+                    360: {
+                        slidesPerView: 1,
+                    },
+                    992: {
+                        slidesPerView: 2,
+                    },
+                    1200: {
+                        slidesPerView: 3,
+                    },
+                    1500: {
+                        slidesPerView: 4,
+                    },
+                    1920: {
+                        slidesPerView: 5,
+                    },
+                },
+
+            });
+
+            var thirdSwiper = new Swiper('.second-swiper-grid', {
+                slidesPerView: 20,
+                spaceBetween: 40,
+                loop: true,
+                keyboard: true,
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+                breakpoints: {
+                    360: {
+                        slidesPerView: 1,
+                    },
+                    992: {
+                        slidesPerView: 2,
+                    },
+                    1200: {
+                        slidesPerView: 3,
+                    },
+                    1500: {
+                        slidesPerView: 4,
+                    },
+                    1920: {
+                        slidesPerView: 5,
+                    },
+                },
+
+            })
+
+
+        });
+
+
+
+    </script>
+    <script>
+        // Function to generate a random rating between 1 and 5
+        function generateRandomRating() {
+            return Math.floor(Math.random() * 5) + 1;
+        }
+
+        var ratingContainers = document.querySelectorAll('.rating');
+
+        ratingContainers.forEach(function (ratingContainer) {
+            var randomRating = generateRandomRating();
+
+            var roundedRating = Math.round(randomRating * 2) / 2;
+
+            for (var i = 1; i <= 5; i++) {
+                var star = document.createElement('span');
+                star.className = 'star';
+
+                if (i <= roundedRating) {
+                    star.innerHTML = '&#9733;'; // Filled star
+                } else {
+                    star.innerHTML = '&#9734;'; // Unfilled star
+                }
+
+                ratingContainer.appendChild(star);
+            }
+        });
+    </script>
+
+
+
+</body>
+
+</html>
